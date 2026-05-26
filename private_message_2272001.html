@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Message 💙</title>
+<style>
+body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#1e3c72,#2a5298);color:white;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}
+.container{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:30px;border-radius:20px;width:90%;max-width:700px;text-align:center}
+input{padding:12px;border:none;border-radius:10px;width:80%;margin:10px 0}
+button{padding:12px 20px;border:none;border-radius:10px;cursor:pointer}
+#message{display:none;text-align:left;line-height:1.8;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="container">
+<div id="login">
+<h1>🔒 Private Message</h1>
+<p>Enter Password</p>
+<input type="password" id="password" placeholder="Password">
+<br><button onclick="checkPassword()">Open</button>
+</div>
+
+<div id="message">
+<p><strong>اهلا بك في دار انتي نوره وفي قلب انتي سكينته</strong></p>
+<p>Pensé muchas veces en cómo sería verte por primera vez. 여러 번 상상했어 cómo sería ese momento, imaginando muchos detalles en mi mente, pero cuando te vi, me di cuenta de que la realidad era mucho más bonita que cualquier imaginación.</p>
+<p>Tu presencia tiene algo diferente, 특별한 분위기와 존재감 que hace que todo se sienta distinto cuando estás cerca. En ese momento entendí que todo lo que había imaginado no se comparaba contigo.</p>
+<p>Eres mucho más de lo que pensé, 내가 만들 수 있었던 어떤 상상보다도 더 특별한 사람이다.</p>
+<p style="text-align:center;">💙💜</p>
+</div>
+</div>
+
+<script>
+function checkPassword(){
+ const password=document.getElementById("password").value;
+ if(password==="2272001"){
+   document.getElementById("login").style.display="none";
+   document.getElementById("message").style.display="block";
+ } else {
+   alert("Incorrect Password");
+ }
+}
+</script>
+</body>
+</html>
